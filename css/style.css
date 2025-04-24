@@ -1,0 +1,280 @@
+/* css/style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: #FFFFFF;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  margin-bottom: 30px;
+  background: #D9D9D9;
+  padding: 10px;
+  width:178px;
+  height:52px;
+  margin-left:36px;
+  margin-top:35px;
+margin-right:66px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  display
+  
+}
+
+.sidebar-nav li {
+  padding: 15px 0;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width:130px;
+  height:24px;
+  
+}
+
+.sidebar-nav li.active {
+  background: #f5e1fd;
+  color: #e91e63;
+  border-left: 4px solid #e91e63;
+}
+
+.icon {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-bar {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+.header-icons .icon {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.user-profile {
+  font-weight: 500;
+}
+
+/* Overview Cards */
+.overview h2,
+.analytics h2,
+.saving-plan h2,
+.transactions h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.overview-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease; /* Animation */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Animation on hover */
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.change {
+  font-size: 12px;
+}
+
+.change.up {
+  color: #28a745;
+}
+
+.change.down {
+  color: #dc3545;
+}
+
+.arrow-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #f5f6fa;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Analytics Chart */
+.chart {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Sidebar */
+.right-sidebar {
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.saving-plan,
+.transactions {
+  margin-bottom: 30px;
+}
+
+.saving-plan h2,
+.transactions h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.see-all {
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.saving-item {
+  margin-bottom: 20px;
+}
+
+.saving-item h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.progress-bar {
+  background: #f5f6fa;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  background: #007bff;
+  height: 100%;
+  transition: width 0.5s ease; /* Animation */
+}
+
+.transaction-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f5f6fa;
+}
+
+.transaction-icon {
+  font-size: 20px;
+}
+
+.transaction-details p {
+  font-size: 14px;
+}
+
+.transaction-details p:last-child {
+  color: #666;
+  font-size: 12px;
+}
+
+.amount {
+  font-weight: 500;
+}
+
+.status {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.status.completed {
+  background: #28a745;
+  color: #fff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .right-sidebar {
+    width: 100%;
+  }
+
+  .overview-cards {
+    flex-direction: column;
+  }
+}

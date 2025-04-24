@@ -1,0 +1,168 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo"></div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li class="active">
+              <img
+                src="assets/element-4.svg"
+                alt="Dashboard Icon"
+                class="icon"
+              />Dashboard
+            </li>
+            <li>
+              <span class="icon"><element-4 />📅</span> Schedule
+            </li>
+            <li><span class="icon">✉️</span> Message</li>
+            <li><span class="icon">📊</span> Analytics</li>
+            <li><span class="icon">👥</span> Team</li>
+            <li><span class="icon">👤</span> Profile</li>
+            <li><span class="icon">⚙️</span> Settings</li>
+            <li><span class="icon">❓</span> Help</li>
+            <li><span class="icon">🚪</span> Logout</li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- Header -->
+        <header class="header">
+          <h1>Finance Dashboard</h1>
+          <div class="header-right">
+            <input
+              type="text"
+              placeholder="Search here..."
+              class="search-bar"
+            />
+            <div class="header-icons">
+              <span class="icon">🔔</span>
+              <span class="icon">💬</span>
+              <span class="icon">👤</span>
+            </div>
+            <div class="user-profile">Mire Kiranti</div>
+          </div>
+        </header>
+
+        <!-- Overview Section -->
+        <section class="overview">
+          <h2>Overview</h2>
+          <div class="overview-cards">
+            <div class="card balance-card">
+              <p>Your Balance</p>
+              <h3>$28,891.138</h3>
+              <p class="change up">18% compared with last month</p>
+              <button class="arrow-btn">➔</button>
+            </div>
+            <div class="card expenses-card">
+              <p>Expenses</p>
+              <h3>$200.31</h3>
+              <p class="change down">2% compared with last month</p>
+              <button class="arrow-btn">➔</button>
+            </div>
+            <div class="card incomes-card">
+              <p>Incomes</p>
+              <h3>$21,121.0</h3>
+              <p class="change up">16% compared with last month</p>
+              <button class="arrow-btn">➔</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Analytics Section -->
+        <section class="analytics">
+          <h2>Analytics</h2>
+          <div class="chart">
+            <canvas id="financeChart"></canvas>
+          </div>
+        </section>
+      </main>
+
+      <!-- Right Sidebar (Saving Plan & Transactions) -->
+      <aside class="right-sidebar">
+        <!-- Saving Plan -->
+        <section class="saving-plan">
+          <h2>Saving Plan <a href="#" class="see-all">See All</a></h2>
+          <div class="saving-item">
+            <p>Bali Vacation</p>
+            <h3>$1950.21 / $4000</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 48%"></div>
+            </div>
+            <p>Target: August 25, 2022</p>
+          </div>
+          <div class="saving-item">
+            <p>New Gadget</p>
+            <h3>$920.71 / $1000</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 79%"></div>
+            </div>
+            <p>Target: August 25, 2022</p>
+          </div>
+          <div class="saving-item">
+            <p>Charity</p>
+            <h3>$321.7 / $1000</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 32%"></div>
+            </div>
+            <p>Target: August 25, 2022</p>
+          </div>
+        </section>
+
+        <!-- Recent Transactions -->
+        <section class="transactions">
+          <h2>Recent Transaction <a href="#" class="see-all">See All</a></h2>
+          <div class="transaction-item">
+            <div class="transaction-icon">📊</div>
+            <div class="transaction-details">
+              <p>Figma</p>
+              <p>August 20, 2022</p>
+            </div>
+            <p class="amount">$100</p>
+            <span class="status completed">Completed</span>
+          </div>
+          <div class="transaction-item">
+            <div class="transaction-icon">🎥</div>
+            <div class="transaction-details">
+              <p>Youtube</p>
+              <p>August 20, 2022</p>
+            </div>
+            <p class="amount">$120</p>
+            <span class="status completed">Completed</span>
+          </div>
+          <div class="transaction-item">
+            <div class="transaction-icon">🎵</div>
+            <div class="transaction-details">
+              <p>Spotify</p>
+              <p>August 20, 2022</p>
+            </div>
+            <p class="amount">$15</p>
+            <span class="status completed">Completed</span>
+          </div>
+          <div class="transaction-item">
+            <div class="transaction-icon">🖼️</div>
+            <div class="transaction-details">
+              <p>Freepik</p>
+              <p>August 20, 2022</p>
+            </div>
+            <p class="amount">$300</p>
+            <span class="status completed">Completed</span>
+          </div>
+        </section>
+      </aside>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
