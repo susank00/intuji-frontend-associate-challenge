@@ -1,0 +1,333 @@
+/* Responsiveness */
+/* Responsiveness */
+/* Responsiveness for screens 320px to 768px */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    max-width: 100%; /* Full viewport width */
+    max-height: none; /* Remove max-height constraint */
+    padding: 0; /* Remove any container padding */
+  }
+
+  /* Stack grid items in .details vertically */
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Reduced gap for smaller screens */
+    width: 100%;
+  }
+
+  /* Hamburger Menu */
+  .hamburger {
+    display: block;
+    position: fixed;
+    left: 12px; /* Adjusted for smaller screens */
+    top: 12px;
+    z-index: 1000;
+    font-size: 20px; /* Slightly smaller for 320px */
+    padding: 8px;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 100%; /* Full width on mobile */
+    max-width: 280px; /* Cap sidebar width */
+    height: 100vh;
+    left: -100%;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar.open + .main-content {
+    margin-left: 0; /* Prevent content shift on mobile */
+  }
+
+  /* Overlay for sidebar */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  /* Main Content */
+  .main-content {
+    padding: 16px; /* Reduced padding */
+    padding-top: 48px; /* Adjusted for hamburger menu */
+    width: 100%;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Reduced gap */
+  }
+
+  .search-bar {
+    width: 100%;
+    height: 40px; /* Smaller height for mobile */
+    border-radius: 20px; /* Slightly less rounded */
+    padding: 8px;
+  }
+
+  .search-input {
+    padding: 8px 12px 8px 32px; /* Adjusted padding */
+    font-size: 14px; /* Smaller font */
+  }
+
+  .search-icon {
+    left: 10px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .header-right {
+    width: 100%;
+    height: 48px;
+    padding: 6px;
+    border-radius: 20px;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: space-between;
+  }
+
+  .userprofileicons {
+    width: 36px; /* Smaller icons */
+    height: 36px;
+    padding: 8px;
+  }
+
+  .user-profile {
+    font-size: 14px; /* Smaller font */
+  }
+
+  /* Overview Section */
+  .overview {
+    width: 100%;
+    height: auto;
+    padding: 12px; /* Reduced padding */
+    border-radius: 10px;
+  }
+
+  .overview h2 {
+    font-size: 18px; /* Smaller heading */
+  }
+
+  .overview-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .overview-cards-parent {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .overview-card-details .icons {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+  }
+
+  .overview-card-text h4 {
+    font-size: 16px; /* Smaller title */
+    line-height: 20px;
+  }
+
+  .overview-card-text p {
+    font-size: 10px; /* Smaller text */
+  }
+
+  .overview-card-detailsbottom p {
+    font-size: 22px; /* Smaller balance */
+  }
+
+  .carddivider {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .arrowlinkicon {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Right Sidebar (Saving Plan & Transactions) */
+  .right-sidebar {
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    border-radius: 10px;
+  }
+
+  /* Saving Plan Section */
+  .saving-plan {
+    width: 100%;
+  }
+
+  .saving-plan-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .saving-plan h2 {
+    font-size: 18px; /* Smaller heading */
+  }
+
+  .see-all {
+    font-size: 14px; /* Smaller link */
+  }
+
+  .savingplandivider {
+    width: 100%;
+    margin: 12px 0; /* Reduced margin */
+  }
+
+  .saving-item {
+    margin-bottom: 10px; /* Reduced spacing */
+  }
+
+  .saving-item-cardheader {
+    flex-direction: column; /* Stack header items */
+    gap: 4px;
+  }
+
+  .saving-item-cardheader h4 {
+    font-size: 14px; /* Smaller title */
+  }
+
+  .saving-item-cardheader p {
+    font-size: 10px; /* Smaller target date */
+  }
+
+  .saving-item-cardbody {
+    flex-direction: column; /* Stack body items */
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .saving-item-cardbody div {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .saving-item-cardbody h3 {
+    font-size: 16px; /* Smaller amount */
+  }
+
+  .saving-item-cardbody p {
+    font-size: 10px; /* Smaller target */
+  }
+
+  .saving-item-cardbody p:last-child {
+    font-size: 14px; /* Percentage */
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 6px; /* Thinner progress bar */
+  }
+
+  .progress {
+    width: 100%; /* Ensure progress matches percentage */
+  }
+
+  /* Analytics Section */
+  .analytics {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .analytics-header h2 {
+    font-size: 18px;
+  }
+
+  .analytics-header-right {
+    gap: 16px; /* Reduced gap */
+    flex-wrap: wrap; /* Allow wrapping */
+  }
+
+  .select {
+    width: 80px;
+    height: 28px;
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .chart-icon {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+  }
+
+  /* Transactions Section */
+  .transactions {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .transactions-header h2 {
+    font-size: 18px;
+  }
+
+  .transactiondivider {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .transaction-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .transactionsicons {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+  }
+
+  .transaction-list {
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .transaction-details p {
+    font-size: 14px; /* Smaller title */
+  }
+
+  .transaction-details p:last-child {
+    font-size: 10px; /* Smaller date */
+  }
+
+  .amount {
+    font-size: 14px; /* Smaller amount */
+  }
+
+  .status {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}

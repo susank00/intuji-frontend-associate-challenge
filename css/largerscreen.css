@@ -1,0 +1,338 @@
+/* Responsiveness for screens larger than 1440px */
+@media (min-width: 1441px) {
+  /* Container */
+  .container {
+    max-width: 1920px; /* Support up to 2K displays, adjust as needed */
+    margin: 0 auto; /* Center the container */
+    border-radius: 40px; /* Slightly larger radius for larger screens */
+    min-height: 100vh;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 320px; /* Slightly wider sidebar */
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+  }
+
+  .logo {
+    width: 200px; /* Larger logo */
+    height: 60px;
+    margin: 40px 70px 0 50px; /* Adjusted margins */
+    font-size: 28px; /* Larger font */
+  }
+
+  .logo img {
+    margin-top: 16px; /* Adjusted for larger logo */
+  }
+
+  .sidebar-nav {
+    height: 900px; /* Adjusted for larger viewport */
+    margin-top: 40px;
+  }
+
+  .sidebar-nav li {
+    width: 300px; /* Wider nav items */
+    height: 72px; /* Taller nav items */
+    font-size: 18px; /* Larger font */
+    padding: 18px 0;
+  }
+
+  .icon {
+    font-size: 24px; /* Larger icons */
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+
+  .divider {
+    width: 260px; /* Wider divider */
+    margin: 40px 30px;
+  }
+
+  .bottom-nav {
+    margin-top: 250px; /* Adjusted spacing */
+  }
+
+  /* Main Content */
+  .main-content {
+    padding: 40px; /* More padding for spaciousness */
+  }
+
+  /* Header */
+  .header {
+    gap: 40px; /* Larger gap */
+  }
+
+  .search-bar {
+    width: 900px; /* Wider search bar */
+    height: 72px; /* Taller search bar */
+    border-radius: 100px; /* Larger radius */
+    padding: 24px 16px;
+  }
+
+  .search-input {
+    font-size: 18px; /* Larger font */
+    padding: 0 20px 12px 48px; /* Adjusted padding */
+  }
+
+  .search-icon {
+    left: 16px; /* Adjusted position */
+    width: 20px; /* Larger icon */
+    height: 20px;
+    margin-left: 24px;
+  }
+
+  .header h1 {
+    font-size: 22px; /* Larger heading */
+  }
+
+  .header-right {
+    width: 400px; /* Wider header-right */
+    height: 72px; /* Taller */
+    padding: 10px;
+    border-radius: 100px;
+  }
+
+  .header-icons .icon {
+    margin: 10px 12px 10px 10px; /* Adjusted spacing */
+    font-size: 24px; /* Larger icons */
+  }
+
+  .userprofileicons {
+    width: 56px; /* Larger profile icon */
+    height: 56px;
+    padding: 14px;
+    border-radius: 50%; /* Maintain circular shape */
+  }
+
+  .user-profile {
+    font-size: 18px; /* Larger font */
+    gap: 12px;
+  }
+
+  /* Details Section */
+  .details {
+    gap: 40px; /* Larger gap */
+    margin-top: 40px;
+  }
+
+  /* Overview Section */
+  .overview {
+    width: 900px; /* Wider overview */
+    height: 500px; /* Taller overview */
+    padding: 20px;
+    border-radius: 18px; /* Larger radius */
+  }
+
+  .overview h2 {
+    font-size: 24px; /* Larger heading */
+    letter-spacing: -1.2px;
+  }
+
+  .overview-cards {
+    gap: 24px; /* Larger gap */
+    margin-top: 32px;
+  }
+
+  .overview-cards-parent {
+    width: 420px; /* Wider cards */
+    height: 200px; /* Taller cards */
+    padding: 24px;
+    border-radius: 18px;
+  }
+
+  .overview-card-details .icons {
+    width: 56px; /* Larger icons */
+    height: 56px;
+    padding: 10px;
+    margin-right: 12px;
+  }
+
+  .overview-card-text h4 {
+    font-size: 20px; /* Larger title */
+    line-height: 28px;
+  }
+
+  .overview-card-text p {
+    font-size: 14px; /* Larger text */
+  }
+
+  .overview-card-detailsbottom p {
+    font-size: 32px; /* Larger balance */
+    letter-spacing: -2.5px;
+  }
+
+  .overview-card-detailsbottom {
+    gap: 150px; /* Wider gap */
+  }
+
+  .arrowlinkicon {
+    width: 28px; /* Larger arrow icon */
+    height: 28px;
+  }
+
+  .carddivider {
+    width: 360px; /* Wider divider */
+    margin: 24px 0;
+  }
+
+  .overview-cards-parent h2 {
+    font-size: 32px; /* Larger heading */
+    width: 180px;
+  }
+
+  /* Analytics Section */
+  .analytics {
+    width: 900px; /* Wider analytics */
+    height: 480px; /* Taller analytics */
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .analytics-header h2 {
+    font-size: 24px; /* Larger heading */
+    letter-spacing: -1.2px;
+  }
+
+  .analytics-header-right {
+    gap: 40px; /* Larger gap */
+    font-size: 18px; /* Larger font */
+  }
+
+  .select {
+    width: 110px; /* Wider dropdown */
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .chart-icon {
+    width: 840px; /* Wider chart */
+    height: 360px; /* Taller chart */
+    margin-top: 32px;
+  }
+
+  /* Right Sidebar */
+  .right-sidebar {
+    width: 420px; /* Wider sidebar */
+    height: 500px; /* Taller sidebar */
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  /* Saving Plan Section */
+  .saving-plan h2 {
+    font-size: 24px; /* Larger heading */
+    letter-spacing: -1.2px;
+  }
+
+  .savingplandivider {
+    width: 380px; /* Wider divider */
+    margin: 32px 0;
+  }
+
+  .saving-item {
+    margin-bottom: 20px; /* More spacing */
+  }
+
+  .saving-item h4 {
+    font-size: 18px; /* Larger title */
+    line-height: 28px;
+  }
+
+  .saving-item h3 {
+    font-size: 24px; /* Larger amount */
+  }
+
+  .saving-item p {
+    font-size: 14px; /* Larger text */
+  }
+
+  .saving-item-cardbody p {
+    font-size: 20px; /* Larger percentage */
+  }
+
+  .progress-bar {
+    height: 10px; /* Thicker progress bar */
+    width: 360px; /* Wider progress bar */
+  }
+
+  /* Transactions Section */
+  .transactions {
+    width: 420px; /* Wider transactions */
+    height: 480px; /* Taller transactions */
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .transactions-header h2 {
+    font-size: 24px; /* Larger heading */
+    letter-spacing: -1.2px;
+  }
+
+  .transactiondivider {
+    width: 380px; /* Wider divider */
+    margin: 32px 0;
+  }
+
+  .transaction-item {
+    gap: 12px; /* Larger gap */
+    margin-bottom: 30px;
+  }
+
+  .transactionsicons {
+    width: 28px; /* Larger icons */
+    height: 28px;
+    padding: 14px;
+  }
+
+  .transaction-bg {
+    width: 56px; /* Larger background */
+    height: 56px;
+  }
+
+  .transaction-list {
+    gap: 140px; /* Wider gap */
+  }
+
+  .transaction-details p {
+    font-size: 20px; /* Larger title */
+    line-height: 28px;
+  }
+
+  .transaction-details p:last-child {
+    font-size: 14px; /* Larger date */
+  }
+
+  .amount {
+    font-size: 20px; /* Larger amount */
+  }
+
+  .status {
+    font-size: 14px; /* Larger status */
+    padding: 6px 12px;
+  }
+
+  .status.completed {
+    font-size: 14px;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px); /* Slightly larger offset */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes cardAppear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
