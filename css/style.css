@@ -81,7 +81,7 @@ margin-top:33px;
 /* Main Content */
 .main-content {
   flex: 1;
-  padding: 20px;
+  padding: 32px;
 }
 .divider {
   width: 219px;
@@ -171,12 +171,15 @@ width: 100%;
 
 
 .header-icons .icon {
-  /* display: inline-block; */
   margin: 8px 10px 8px 8px;
+  gap: 8px;
 }
 
 .user-profile {
   font-weight: 500;
+  gap: 10px;
+  display: flex;
+  align-items: center;
 }
 .userprofileicons{
   width: 48px;
@@ -186,7 +189,6 @@ width: 100%;
   border: 1px solid #000000;
   border-opacity: 20%;
   padding:11px;
-  margin-right: 10px;
 
 }
 /* Overview Cards */
@@ -334,11 +336,12 @@ line-height:24px;
 }
 
 /* Analytics Chart */
-.chart {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+.chart-icon {
+  width:677px;
+  height:304px;
+  gap:18px;
+  margin-top: 24px;
 }
 
 /* Right Sidebar */
@@ -442,11 +445,39 @@ font-size: 18px;
   background: #FFFFFF;
   width:717px;
   height:402px;
-
-
 }
 
+.analytics-header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  height:25px;
+}
+.analytics-header h2
+{
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.analytics-header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:32px;
+  font-weight: 500;
+  font-size: 16px;
+}
 
+.select {
+  width: 90px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid #DEDEDE;
+  padding: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+}
 /* transaction-css  */
 .transactions {
   width: 347px;
@@ -461,6 +492,7 @@ font-size: 18px;
   /* align-items: center; */
   height:25px;
 }
+
 .transactiondivider {
   width: 315px;
   height: 1px;
