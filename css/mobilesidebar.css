@@ -1,0 +1,65 @@
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #333;
+}
+
+/* Show hamburger and adjust sidebar on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: fixed; /* Changed from absolute to fixed to stick to viewport */
+    left: 16px; /* Slightly reduced for tighter alignment to edge */
+    top: 16px; /* Slightly reduced for consistent spacing */
+    z-index: 1000; /* Ensure it stays above other elements */
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 280px;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  /* Ensure main content is not overlapped when sidebar is open */
+  .main-content {
+    transition: margin-left 0.3s ease;
+  }
+
+  .sidebar.open + .main-content {
+    margin-left: 280px;
+  }
+
+  /* Dim background when sidebar is open */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  /* Add padding to main-content to prevent overlap with hamburger */
+  .main-content {
+    padding-top: 60px; /* Increased to account for hamburger height */
+  }
+}

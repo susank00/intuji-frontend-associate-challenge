@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finance Dashboard</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mobilesidebar.css" />
   </head>
   <body>
+    <button class="hamburger">☰</button>
+
     <div class="container">
       <!-- Sidebar -->
       <aside class="sidebar">
@@ -19,7 +22,7 @@
             <li class="active">
               <img
                 src="assets/element-4.svg"
-                alt="Dashboard Icon"
+                alt="Dashboard Navigation Icon"
                 class="icon"
               />Dashboard
             </li>
@@ -47,7 +50,7 @@
               />
               Team
             </li>
-            <div class="divider"></div>
+            <hr class="divider" />
 
             <li>
               <img src="assets/user.svg" alt="Dashboard Icon" class="icon" />
@@ -58,24 +61,22 @@
               Settings
             </li>
             <div class="bottom-nav">
-            <li>
-              <img
-                src="assets/info-circle.svg"
-                alt="Dashboard Icon"
-                class="icon"
-              />
-              Help
-            </li>
-            <li>
-              <img
-                src="assets/login.svg"
-                alt="Dashboard Icon"
-                class="icon"
-              />Logout
-            </li>
-
+              <li>
+                <img
+                  src="assets/info-circle.svg"
+                  alt="Dashboard Icon"
+                  class="icon"
+                />
+                Help
+              </li>
+              <li>
+                <img
+                  src="assets/login.svg"
+                  alt="Dashboard Icon"
+                  class="icon"
+                />Logout
+              </li>
             </div>
-            </ul>
           </ul>
         </nav>
       </aside>
@@ -84,296 +85,413 @@
       <main class="main-content">
         <!-- Header -->
         <header class="header">
+          <div class="search-bar">
+            <img
+              src="assets/search-normal.svg"
+              alt="Search Icon"
+              class="search-icon"
+            />
+            <input
+              type="text"
+              placeholder="Search here …"
+              class="search-input"
+            />
+          </div>
 
-        <div class="search-bar">
-          <img src="assets/search-normal.svg" alt="Search Icon" class="search-icon" />
-          <input
-            type="text"
-            placeholder="Search here …"
-            class="search-input"
-          />
-        </div>
-        
-   
           <div class="header-right">
-      
-      
             <div class="header-icons">
               <img
-              src="assets/notification-bing.svg"
-              alt="Dashboard Icon"
-              class="userprofileicons"
-            style="
-             border: 1px solid #5c595933; height: 48px; width: 66px; "/>
-            <img
-            src="assets/message-text.svg"
-            alt="Dashboard Icon"
-            class="userprofileicons"
-            style="
-             border: 1px solid #5c595933; height: 48px; width: 66px; "/>
-          <img src="assets/gallery.svg" alt="empty-wallet" class="transactionsicons" style="
-             border: 1px solid #DEDEDE33; height: 48px; width: 48px; "/>
+                src="assets/notification-bing.svg"
+                alt="Dashboard Icon"
+                class="userprofileicons"
+                style="border: 1px solid #5c595933; height: 48px; width: 66px"
+              />
+              <img
+                src="assets/message-text.svg"
+                alt="Dashboard Icon"
+                class="userprofileicons"
+                style="border: 1px solid #5c595933; height: 48px; width: 66px"
+              />
+              <img
+                src="assets/gallery.svg"
+                alt="empty-wallet"
+                class="transactionsicons"
+                style="border: 1px solid #dedede33; height: 48px; width: 48px"
+              />
             </div>
-            <div class="user-profile">Mire Kiranti
-            <img src="assets/arrow-down.svg" alt="empty-wallet" class="icons" />
-          </div>
+            <div class="user-profile">
+              Mire Kiranti
+              <img
+                src="assets/arrow-down.svg"
+                alt="empty-wallet"
+                class="icons"
+              />
+            </div>
           </div>
         </header>
 
         <!-- Overview Section -->
-         <div class="details">
-        <section class="overview">
-          <h2>Overview</h2>
-          <div class="overview-cards">
-            <div class="overview-cards-parent"     style="background:#4745A4; color: #fff;">
-            <div class="overview-card-details"
-        >
-            <img src="assets/empty-wallet.png" alt="empty-wallet" class="icons" style="
-  border: 1px solid #DEDEDE33;
-  "/>
-            <div class="overview-card-text">
-              <h4>Your Balance</h4>
-              <div class="changewithicons">
-              <img src="assets/arrowupgreen.png" alt="arrow" class="iconsarrow"> <p class="changeup">15% compared with last month</p>
+        <div class="details">
+          <section class="overview">
+            <h2>Overview</h2>
+            <div class="overview-cards">
+              <div
+                class="overview-cards-parent"
+                style="background: #4745a4; color: #fff"
+              >
+                <div class="overview-card-details">
+                  <img
+                    src="assets/empty-wallet.png"
+                    alt="empty-wallet"
+                    class="icons"
+                    style="border: 1px solid #dedede33"
+                  />
+                  <div class="overview-card-text">
+                    <h4>Your Balance</h4>
+                    <div class="changewithicons">
+                      <img
+                        src="assets/arrowupgreen.png"
+                        alt="arrow"
+                        class="iconsarrow"
+                      />
+                      <p class="changeup">15% compared with last month</p>
+                    </div>
+                  </div>
+                </div>
+                <hr class="carddivider" style="border: 1px solid #ffffff" />
+
+                <div class="overview-card-detailsbottom">
+                  <p>$28,891.138</p>
+
+                  <img
+                    src="assets/arrowright.png"
+                    alt="arrow-showdetails"
+                    class="arrowlinkicon"
+                  />
+                </div>
               </div>
+              <!-- Saving card  -->
+              <div class="overview-cards-parent">
+                <div class="overview-card-details">
+                  <img
+                    src="assets/saving.png"
+                    alt="empty-wallet"
+                    class="icons"
+                  />
+                  <div class="overview-card-text">
+                    <h4>Saving</h4>
+                    <div class="changewithicons">
+                      <img
+                        src="assets/savingarrow.png"
+                        alt="arrow"
+                        class="iconsarrow"
+                      />
+                      <p class="changeup">10% compared with last month</p>
+                    </div>
+                  </div>
+                </div>
+                <hr class="carddivider" />
+                <div class="overview-card-detailsbottom">
+                  <p>$1050.44</p>
+
+                  <img
+                    src="assets/arrow-rightblack.png"
+                    alt="arrow-showdetails"
+                    class="arrowlinkicon"
+                  />
+                </div>
+              </div>
+              <!-- Expense Card  -->
+              <div class="overview-cards-parent">
+                <div class="overview-card-details">
+                  <img
+                    src="assets/expenseicon.png"
+                    alt="empty-wallet"
+                    class="icons"
+                  />
+                  <div class="overview-card-text">
+                    <h4>Expenses</h4>
+                    <div class="changewithicons">
+                      <img
+                        src="assets/expensearrow.png"
+                        alt="arrow"
+                        class="iconsarrow"
+                      />
+                      <p class="changeup">2% compared with last month</p>
+                    </div>
+                  </div>
+                </div>
+                <hr class="carddivider" />
+
+                <div class="overview-card-detailsbottom">
+                  <p>$200.31</p>
+
+                  <img
+                    src="assets/arrow-rightblack.png"
+                    alt="arrow-showdetails"
+                    class="arrowlinkicon"
+                  />
+                </div>
+              </div>
+              <!-- Incomes card  -->
+              <div class="overview-cards-parent">
+                <div class="overview-card-details">
+                  <img
+                    src="assets/incomeicon.png"
+                    alt="empty-wallet"
+                    class="icons"
+                  />
+                  <div class="overview-card-text">
+                    <h4>Incomes</h4>
+                    <div class="changewithicons">
+                      <img
+                        src="assets/incomearrow.png"
+                        alt="arrow"
+                        class="iconsarrow"
+                      />
+                      <p class="changeup">8% compared with last month</p>
+                    </div>
+                  </div>
+                </div>
+                <hr class="carddivider" />
+
+                <div class="overview-card-detailsbottom">
+                  <p>$21121.0</p>
+
+                  <img
+                    src="assets/arrow-rightblack.png"
+                    alt="arrow-showdetails"
+                    class="arrowlinkicon"
+                  />
+                </div>
               </div>
             </div>
-            <div class="carddivider" style="border: 1px solid #FFFFFF;"></div>
-
-              <div class="overview-card-detailsbottom">
-                <h2>$28,891.138</h2>
-
-           <img src="assets/arrowright.png" alt="arrow-showdetails" class="arrowlinkicon" />
-            </div>
-          </div>
-          <!-- Saving card  -->
-          <div class="overview-cards-parent">
-            <div class="overview-card-details"
-        >
-            <img src="assets/saving.png" alt="empty-wallet" class="icons" />
-            <div class="overview-card-text">
-              <h4>Saving</h4>
-              <div class="changewithicons">
-              <img src="assets/savingarrow.png" alt="arrow" class="iconsarrow"> <p class="changeup">10% compared with last month</p>
+          </section>
+          <!-- end of overview section -->
+          <!-- Right Sidebar (Saving Plan & Transactions) -->
+          <div class="right-sidebar">
+            <!-- Saving Plan -->
+            <section class="saving-plan">
+              <div class="saving-plan-header">
+                <h2>Saving Plan</h2>
+                <a href="#" class="see-all">See All</a>
               </div>
+              <hr class="savingplandivider" />
+              <!-- 1st saving plan -->
+              <div class="saving-item">
+                <div class="saving-item-cardheader">
+                  <h4>Bali Vacation</h4>
+                  <p>Target: August 25, 2022</p>
+                </div>
+                <div class="saving-item-cardbody">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: end;
+                    "
+                  >
+                    <h3>$1950,21</h3>
+                    <p>/$4000</p>
+                  </div>
+                  <p>48%</p>
+                </div>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 48%; background: #4745a4"
+                    ;
+                  ></div>
+                </div>
               </div>
-            </div>
-            <div class="carddivider"></div>
-
-              <div class="overview-card-detailsbottom">
-                
-                <h2>$1050.44</h2>
-
-
-           <img src="assets/arrow-rightblack.png" alt="arrow-showdetails" class="arrowlinkicon" />
-            </div>
-          </div>
-          <!-- Expense Card  -->
-          <div class="overview-cards-parent">
-            <div class="overview-card-details"
-        >
-            <img src="assets/incomearrow.png" alt="empty-wallet" class="icons" />
-            <div class="overview-card-text">
-              <h4>Expenses</h4>
-              <div class="changewithicons">
-              <img src="assets/expensearrow.png" alt="arrow" class="iconsarrow"> <p class="changeup">2% compared with last month</p>
-              </div>
-              </div>
-            </div>
-            <div class="carddivider"></div>
-
-              <div class="overview-card-detailsbottom">
-                
-                <h2>$200.31</h2>
-
-
-           <img src="assets/arrow-rightblack.png" alt="arrow-showdetails" class="arrowlinkicon" />
-            </div>
-          </div>
-          <!-- Incomes card  -->
-          <div class="overview-cards-parent">
-            <div class="overview-card-details"
-        >
-            <img src="assets/incomeicon.png" alt="empty-wallet" class="icons" />
-            <div class="overview-card-text">
-              <h4>Incomes</h4>
-              <div class="changewithicons">
-              <img src="assets/arrowupgreen.png" alt="arrow" class="iconsarrow"> <p class="changeup">6% compared with last month</p>
-              </div>
-              </div>
-            </div>
-            <div class="carddivider"></div>
-
-              <div class="overview-card-detailsbottom">
-                
-                <h2>$21121.0</h2>
-
-
-           <img src="assets/arrow-rightblack.png" alt="arrow-showdetails" class="arrowlinkicon" />
-            </div>
-          </div>
-          </div>
-        </section>
-        <!-- end of overview section -->
-        <!-- Right Sidebar (Saving Plan & Transactions) -->
-        <div class="right-sidebar">
-          <!-- Saving Plan -->
-          <section class="saving-plan">
-            <div class="saving-plan-header">
-              <h2>Saving Plan</h2>
-              <a href="#" class="see-all">See All</a>
-            </div>
-   <div class="savingplandivider"></div>
-   <!-- 1st saving plan -->
-            <div class="saving-item">
-          <div class="saving-item-cardheader">
-              <h4>Bali Vacation</h4>
-              <p>Target: August 25, 2022</p>
-
-              </div>
-          <div class="saving-item-cardbody">
-<div style="display: flex; justify-content: space-between; align-items: end;">
-              <h3>$1950,21 </h3><p>/$4000</p>
-            </div>
-            <h2>48%</h2>
-              </div>
-              <div class="progress-bar">
-                <div class="progress" style="width: 48%;background:#4745A4";></div>
-              </div>
-            </div>
-            <!-- 2nd saving plan -->
-            <div class="saving-item">
-              <div class="saving-item-cardheader">
+              <!-- 2nd saving plan -->
+              <div class="saving-item">
+                <div class="saving-item-cardheader">
                   <h4>New Gadget</h4>
                   <p>Target: August 25, 2022</p>
-    
-                  </div>
-              <div class="saving-item-cardbody">
-    <div style="display: flex; justify-content: space-between; align-items: end;">
-                  <h3>$790,21 </h3><p>/$1000</p>
                 </div>
-                <h2 style="color:#F9BA33";>79%</h2>
+                <div class="saving-item-cardbody">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: end;
+                    "
+                  >
+                    <h3>$790,21</h3>
+                    <p>/$1000</p>
                   </div>
-                  <div class="progress-bar">
-                    <div class="progress" style="width: 48%;background:#F9BA33";></div>
-                  </div>
+                  <h2 style="color: #f9ba33" ;>79%</h2>
                 </div>
-                <!-- 3rd saving plan -->
-                <div class="saving-item">
-                  <div class="saving-item-cardheader">
-                      <h4>Charity</h4>
-                      <p>Target: August 25, 2022</p>
-        
-                      </div>
-                  <div class="saving-item-cardbody">
-        <div style="display: flex; justify-content: space-between; align-items: end;">
-                      <h3>$32,111 </h3><p>/$100</p>
-                    </div>
-                    <h2 style="color:#3BBB6E";>32%</h2>
-                      </div>
-                      <div class="progress-bar">
-                        <div class="progress" style="width: 48%;background:#3BBB6E";></div>
-                      </div>
-                    </div>
-          </section>
-  
-          <!-- Recent Transactions -->
-       
-        </div>
-        <!-- Analytics Section -->
-        <section class="analytics">
-          <div class="analytics-header">
-            <h2>Analytics</h2>
-            <div class="analytics-header-right">
-              <span style="display: flex; align-items: center; gap:3px;"> <div style="background: #4745A4; width: 12px; height: 12px; border-radius: 50%;"></div>
-              <p>Label 1</p></span>
-              <span style="display: flex; align-items: center; gap:3px;"> <div style="background: #F9BA33; width: 12px; height: 12px; border-radius: 50%;"></div>
-              <p>Label 2</p></span>
-              <select class="select" >
-                <option value="last-month">Weekly</option>
-                <option value="last-week">Last Week</option>
-                <option value="today">Today</option>
-              </select>
-          </div>
-          </div>
-         
-            <img src="assets/analytics.png" alt="Chart Icon" class="chart-icon" />
-        
-        </section>
-        <!-- transactions card  -->
-        <section class="transactions">
-          <div class="transactions-header">
-            <h2>Recent Transactions</h2>
-            <a href="#" class="see-all">See All</a>
-          </div>
-   <div class="transactiondivider"></div>
-<!-- transactions 1 -->
-          <div class="transaction-item">
-             <img src="assets/gallery.svg" alt="empty-wallet" class="transactionsicons" style="
-             border: 1px solid #DEDEDE33; height: 48px; width: 48px; "/>
-           <div class="transaction-list">
-            <div class="transaction-details">
-              <p>Figma</p>
-              <p>August 20, 2022</p>
-            </div>
-            <div class="transaction-status">
-            <p class="amount">$100</p>
-            <span class="status completed">Completed</span>
-          </div>
-        </div>
-          </div>
-          <!-- transaction 2 -->
-          <div class="transaction-item">
-            <img src="assets/gallery.svg" alt="empty-wallet" class="transactionsicons" style="
-            border: 1px solid #DEDEDE33; height: 48px; width: 48px; "/>
-          <div class="transaction-list">
-           <div class="transaction-details">
-             <p>Youtube</p>
-             <p>August 20, 2022</p>
-           </div>
-           <div class="transaction-status">
-           <p class="amount">$120</p>
-           <span class="status completed">Completed</span>
-         </div>
-       </div>
-         </div>
-         <!-- transaction 3  -->
-         <div class="transaction-item">
-          <img src="assets/gallery.svg" alt="empty-wallet" class="transactionsicons" style="
-          border: 1px solid #DEDEDE33; height: 48px; width: 48px; "/>
-        <div class="transaction-list">
-         <div class="transaction-details">
-           <p>Spotify</p>
-           <p>August 20, 2022</p>
-         </div>
-         <div class="transaction-status">
-         <p class="amount">$15</p>
-         <span class="status completed">Completed</span>
-       </div>
-     </div>
-       </div>
-         <!-- transaction 4  -->
-         <div class="transaction-item">
-          <img src="assets/gallery.svg" alt="empty-wallet" class="transactionsicons" style="
-          border: 1px solid #DEDEDE33; height: 48px; width: 48px; "/>
-        <div class="transaction-list">
-         <div class="transaction-details">
-           <p>Freepik</p>
-           <p>August 20, 2022</p>
-         </div>
-         <div class="transaction-status">
-         <p class="amount">$300</p>
-         <span class="status completed">Completed</span>
-       </div>
-     </div>
-       </div>
-        </section>
-    </div>  
-      </main>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 48%; background: #f9ba33"
+                    ;
+                  ></div>
+                </div>
+              </div>
+              <!-- 3rd saving plan -->
+              <div class="saving-item">
+                <div class="saving-item-cardheader">
+                  <h4>Charity</h4>
+                  <p>Target: August 25, 2022</p>
+                </div>
+                <div class="saving-item-cardbody">
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: end;
+                    "
+                  >
+                    <h3>$32,111</h3>
+                    <p>/$100</p>
+                  </div>
+                  <h2 style="color: #3bbb6e" ;>32%</h2>
+                </div>
+                <div class="progress-bar">
+                  <div
+                    class="progress"
+                    style="width: 48%; background: #3bbb6e"
+                    ;
+                  ></div>
+                </div>
+              </div>
+            </section>
 
-  
+            <!-- Recent Transactions -->
+          </div>
+          <!-- Analytics Section -->
+          <section class="analytics">
+            <div class="analytics-header">
+              <h2>Analytics</h2>
+              <div class="analytics-header-right">
+                <span style="display: flex; align-items: center; gap: 3px">
+                  <div
+                    style="
+                      background: #4745a4;
+                      width: 12px;
+                      height: 12px;
+                      border-radius: 50%;
+                    "
+                  ></div>
+                  <p>Label 1</p></span
+                >
+                <span style="display: flex; align-items: center; gap: 3px">
+                  <div
+                    style="
+                      background: #f9ba33;
+                      width: 12px;
+                      height: 12px;
+                      border-radius: 50%;
+                    "
+                  ></div>
+                  <p>Label 2</p></span
+                >
+                <select class="select">
+                  <option value="last-month">Weekly</option>
+                  <option value="last-week">Last Week</option>
+                  <option value="today">Today</option>
+                </select>
+              </div>
+            </div>
+
+            <img
+              src="assets/analytics.png"
+              alt="Chart Icon"
+              class="chart-icon"
+            />
+          </section>
+          <!-- transactions card  -->
+          <section class="transactions">
+            <div class="transactions-header">
+              <h2>Recent Transactions</h2>
+              <a href="#" class="see-all">See All</a>
+            </div>
+            <hr class="transactiondivider" />
+            <!-- transactions 1 -->
+            <div class="transaction-item">
+              <img
+                src="assets/gallery.svg"
+                alt="empty-wallet"
+                class="transactionsicons"
+                style="border: 1px solid #dedede33; height: 48px; width: 48px"
+              />
+              <div class="transaction-list">
+                <div class="transaction-details">
+                  <p>Figma</p>
+                  <p>August 20, 2022</p>
+                </div>
+                <div class="transaction-status">
+                  <p class="amount">$100</p>
+                  <span class="status completed">Completed</span>
+                </div>
+              </div>
+            </div>
+            <!-- transaction 2 -->
+            <div class="transaction-item">
+              <img
+                src="assets/gallery.svg"
+                alt="empty-wallet"
+                class="transactionsicons"
+                style="border: 1px solid #dedede33; height: 48px; width: 48px"
+              />
+              <div class="transaction-list">
+                <div class="transaction-details">
+                  <p>Youtube</p>
+                  <p>August 20, 2022</p>
+                </div>
+                <div class="transaction-status">
+                  <p class="amount">$120</p>
+                  <span class="status completed">Completed</span>
+                </div>
+              </div>
+            </div>
+            <!-- transaction 3  -->
+            <div class="transaction-item">
+              <img
+                src="assets/gallery.svg"
+                alt="empty-wallet"
+                class="transactionsicons"
+                style="border: 1px solid #dedede33; height: 48px; width: 48px"
+              />
+              <div class="transaction-list">
+                <div class="transaction-details">
+                  <p>Spotify</p>
+                  <p>August 20, 2022</p>
+                </div>
+                <div class="transaction-status">
+                  <p class="amount">$15</p>
+                  <span class="status completed">Completed</span>
+                </div>
+              </div>
+            </div>
+            <!-- transaction 4  -->
+            <div class="transaction-item">
+              <img
+                src="assets/gallery.svg"
+                alt="empty-wallet"
+                class="transactionsicons"
+                style="border: 1px solid #dedede33; height: 48px; width: 48px"
+              />
+              <div class="transaction-list">
+                <div class="transaction-details">
+                  <p>Freepik</p>
+                  <p>August 20, 2022</p>
+                </div>
+                <div class="transaction-status">
+                  <p class="amount">$300</p>
+                  <span class="status completed">Completed</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/mobilesidebar.js"></script>
   </body>
 </html>
